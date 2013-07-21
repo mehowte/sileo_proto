@@ -1,0 +1,24 @@
+<% offers_count=5 %>
+<% w=200 %>
+<% h=250 %>
+<% offers_count.times do |offer_index| %>
+  <div class="media">
+    <% if true || offer_index.odd? %>
+  <a class="pull-left" href="#">
+  <% else %>
+    <a class="pull-right" href="#">
+    <% end %>
+    <%= image_tag "http://placekitten.com/#{w}/#{h}", class:"media-object img-polaroid" %>
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading"><%= lorem.words 5 %></h4>
+    <div class="media">
+      <p><%= lorem.paragraph %></p>
+      <p><%= lorem.paragraph %></p>
+      <p><%= lorem.paragraph %></p>
+      <p><%= lorem.paragraph %></p>
+      <p><%= link_to "Zapisz się »", "/contact.html", class: "btn btn-warning"%></p>
+    </div>
+<%end %>
+</div>
+</div>
