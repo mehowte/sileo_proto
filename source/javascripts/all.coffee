@@ -1,1 +1,9 @@
-#= require_tree .
+#= require jquery-1.6.2.min
+#= require cufon-yui
+#= require cufon-replace
+#= require Open_Sans_400.font
+#= require Open_Sans_italic_400.font
+#= require FF-cash
+#= require jquery.easing.1.3
+#= require tms-0.3
+#= require tms_presets
