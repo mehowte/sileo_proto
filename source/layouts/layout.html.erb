@@ -34,7 +34,7 @@ $(function () {
       <div class="container_12">
         <div class="wrapper">
           <div class="grid_9">
-            <h1> <a class="logo" href="index.html">family center</a> </h1>
+            <h1> <a class="logo" href="/">family center</a> </h1>
           </div>
           <div class="grid_3">
           </div>
@@ -49,12 +49,9 @@ $(function () {
           <div class="grid_12">
             <nav>
               <ul class="menu">
-                <li class="<%= current_page.data.body_id == "page1" ? "active" : "" %>"><a href="index.html">Home Page</a><strong></strong></li>
-                <li class="<%= current_page.data.body_id == "page2" ? "active" : "" %>"><a href="health.html">Health Care</a><strong></strong></li>
-                <li class="<%= current_page.data.body_id == "page3" ? "active" : "" %>"><a href="advices.html">Advices</a><strong></strong></li>
-                <li class="<%= current_page.data.body_id == "page4" ? "active" : "" %>"><a href="staff.html">Our Staff</a><strong></strong></li>
-                <li class="<%= current_page.data.body_id == "page5" ? "active" : "" %>"><a href="news.html">News</a><strong></strong></li>
-                <li class="<%= current_page.data.body_id == "page6" ? "active last" : "last" %>"><a href="contacts.html">Contacts</a><strong></strong></li>
+                <li class="<%= current_page.data.body_id == "page1" ? "active" : "" %>"><a href="/">Strona Główna</a><strong></strong></li>
+                <li class="<%= current_page.data.body_id == "page2" ? "active" : "" %>"><a href="/offer.html">Oferta</a><strong></strong></li>
+                <li class="<%= current_page.data.body_id == "page6" ? "active last" : "last" %>"><a href="/contacts.html">Kontakt</a><strong></strong></li>
               </ul>
             </nav>
             <% if current_page.data.has_slider %>
@@ -107,6 +104,6 @@ $(function () {
     </div>
   </div>
 </footer>
-<script type="text/javascript">Cufon.now();</script>
+<%#<script type="text/javascript">Cufon.now();</script>%>
 </body>
 </html>
