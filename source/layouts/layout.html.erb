@@ -86,9 +86,9 @@ $(function () {
   <div class="main">
     <div class="container_12">
       <div class="wrapper">
-        <div class="grid_3">
+        <div class="grid_2" style="width: 150px;">
           <address>
-            <strong>Sileo Natalia Woszczek</strong><br>
+            <strong>Sileo Natalia&nbsp;Woszczek</strong><br>
             <abbr title="Numer Telefonu">Tel:</abbr> (+48) 795 886 779<br>
             <abbr title="Adres email">Email:</abbr><a href="mailto:#">sileo@gmail.com</a>
           </address>
@@ -97,17 +97,13 @@ $(function () {
             <!-- {%FOOTER_LINK} -->
           </div>
         </div>
-        <div class="grid_2">
-          <a href="#" class="btn btn-large">ODWIEDŹ<br>NAS NA<br>FACEBOOKU</a>
-        </div>
-        <div class=" grid_2">
-          <%= image_tag "/images/footer/kapital_logo.jpg", width:150 %>
-        </div>
-        <div class="grid_2">
-          <%= image_tag "/images/footer/paiplogo.png", width:145 %>
-        </div>
-        <div class="grid_2">
-          <%= image_tag "/images/footer/unia_logo.jpg", width:200 %>
+        <div class="grid_3" style="width: 200px;">
+          <a href="#" class="" style="text-decoration: none;font-size: 125%;"><i class="icon-facebook-sign icon-4x pull-left" style="margin-right: .2em;"></i><div style="font-size: 0.9em;line-height: 1.54em;">ODWIEDŹ<br>NAS NA<br>FACEBOOKU
+            </div></a></div>
+        <div class=" grid_6" style="width: 550px;">
+          <%= image_tag "/images/footer/unia_logo.gif", style: "float: right; margin-left:10px;" %>
+          <%= image_tag "/images/footer/paiplogo.png", style: "float: right; margin-left:10px;" %>
+          <%= image_tag "/images/footer/kapital_logo.jpg", style: "float: right; margin-left:10px;" %>
         </div>
       </div>
     </div>
