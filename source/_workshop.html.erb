@@ -1,0 +1,17 @@
+<div class="wrapper margin-bot">
+  <article class="grid_12">
+    <div class="media">
+      <a class="pull-left" href="<%= image %>" data-lightbox="image-art-sign" title="<%= title %>">
+        <%= image_tag thumbnail, class:"media-object img-polaroid" %>
+      </a>
+      <div class="media-body">
+        <h3 class="media-heading"><%= title %></h3>
+        <div class="media">
+          <%= content %>
+          <p><%= link_to "Zapisz się »", "/contact.html", class: "btn btn-warning"%></p>
+        </div>
+      </div>
+    </div>
+
+  </article>
+</div>

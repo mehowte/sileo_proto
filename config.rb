@@ -45,6 +45,9 @@
 #   end
 # end
 
+require "lib/offer_helpers"
+helpers OfferHelpers
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
