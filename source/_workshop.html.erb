@@ -1,7 +1,31 @@
-<div class="wrapper border-bot margin-bot">
+<% thumbnail = "/images/offer/oferta1_1min.jpg" %>
+<% image_paths = (1..5).to_a.map { |n| "/images/offer/oferta1_#{n}.jpg" } %>
+<script>
+$("#workshop_1").click( function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  $.fancybox.open(
+    [
+    <% image_paths.each do |image_path| %>
+      {href: "<%= image_path %>", title: "<%= title %>"},
+    <% end %>
+    ],
+    {
+      <%#helpers : {%>
+        <%#overlay : {%>
+          <%#css : {%>
+          <%#'background' : 'rgba(58, 42, 45, 0.95)'%>
+          <%#}%>
+        <%#}%>
+      <%#}%>
+    }
+  );
+});
+</script>
+<div class="wrapper border-bot margin-bot" id="workshop_1">
   <article class="grid_12">
     <div class="media">
-      <a class="pull-left" href="<%= image %>" data-lightbox="image-art-sign" title="<%= title %>">
+      <a class="pull-left" href="#" data-lightbox="image-art-sign" title="<%= title %>">
         <%= image_tag thumbnail, class:"media-object img-polaroid" %>
       </a>
       <div class="media-body">
