@@ -550,7 +550,7 @@ dl.news dt {
 }
 #contact-form input {
 	float:left;
-	width:427px;
+	width:360px;
 	font-size:13px;
 	line-height:1.23em;
 	color:#404040;
@@ -564,7 +564,7 @@ dl.news dt {
 	float:left;
 	height:208px;
 	overflow:auto;
-	width:427px;
+	width:360px;
 	font-size:13px;
 	line-height:1.23em;
 	color:#404040;
