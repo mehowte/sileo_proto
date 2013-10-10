@@ -14,22 +14,22 @@
       <div class="wrapper">
         <article class="grid_7 suffix_1 spacer-5">
           <h2>Get in Touch</h2>
-          <form id="contact-form" action="#" method="post" enctype="multipart/form-data">
+          <form id="contact-form" action="http://www.hostedcontactform.com/api/v1/emails" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="form_token" value="3fdd547c90b878f37fc8e1fca847364f">
+            <input type="hidden" name="success_url" value="http://0.0.0.0:4567/thank_you.html">
+            <input type="hidden" name="failure_url" value="http://0.0.0.0:4567/thank_you.html">
             <fieldset>
-              <label><span class="text-form">Name:</span>
-                <input name="p1" type="text" />
-              </label>
-              <label><span class="text-form">Email:</span>
-                <input name="p2" type="text" />
-              </label>
-              <label><span class="text-form">Phone:</span>
-                <input name="p3" type="text" />
-              </label>
-              <div class="wrapper">
-                <div class="text-form">Message:</div>
-                <textarea></textarea>
-              </div>
-              <div class="buttons"> <a class="button" href="#">Clear</a> <a class="button" href="#">Send</a> </div>
+              <label for="email_name"><span class="text-form">Imię</span>
+    <input type="text" name="email[name]" id="email_name"></label>
+    <label for="email_from"><span class="text-form">Email</span>
+    <input type="email" required name="email[from]" id="email_from"></label>
+    <label for="email_subject"><span class="text-form">Temat</span>
+    <input type="text" name="email[subject]" id="email_subject"></label>
+  <div class="wrapper">
+    <label for="email_body" class="text-form"><span class="text-form">Wiadomość</span></label>
+    <textarea name="email[body]" id="email_body" rows="5"></textarea>
+  </div>
+              <div class="buttons"> <button type="submit" class="button" href="#">Wyślij</button> </div>
             </fieldset>
           </form>
         </article>
