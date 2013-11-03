@@ -1,13 +1,14 @@
 @charset "utf-8";
-@import "bootstrap";
-@import "bootstrap-responsive";
-@import "lightbox";
+@import 'reset';
+@import 'style';
+@import 'grid';
+@import 'font-awesome';
+@import 'fancybox';
+@import 'jquery.fancybox-buttons';
 
-.logo {
-  margin: 10px;
+.img-polaroid {
+  margin-right: 15px;
+  background: white;
+  border: solid 1px #C5C5C5;
+  padding: 4px 4px 4px 4px;
 }
-.navbar {
-  margin-top: 30px;
-  width: 275px;
-}
-
