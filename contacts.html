@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen">
 <![endif]-->
 </head>
-<body id="page1">
+<body id="page6">
 
 <!-- header -->
 <header>
@@ -36,7 +36,7 @@
               <ul class="menu">
                 <li class=""><a href="/">Strona Główna</a><strong></strong></li>
                 <li class=""><a href="/offer.html">Oferta</a><strong></strong></li>
-                <li class="last"><a href="/contacts.html">Kontakt</a><strong></strong></li>
+                <li class="active last"><a href="/contacts.html">Kontakt</a><strong></strong></li>
               </ul>
             </nav>
             
@@ -49,23 +49,37 @@
 </header>
 
 
-<div class="row">
-  <div class="offset3 span5">
-    <form>
-      <fieldset>
-        <legend>Napisz do nas</legend>
-        <label>Email</label>
-        <input class="span5" type="email" placeholder="">
-        <label>Treść</label>
-        <textarea class="span5" rows="5"></textarea>
-
-        <div class="form-actions">
-          <a class="btn-large btn-primary" href="/thank_you.html">Wyślij</a>
-        </div>
-      </fieldset>
-    </form>
+<!-- content -->
+<section id="content">
+  <div class="main">
+    <div class="container_12">
+      <div class="wrapper">
+        <article class="grid_7 prefix_3">
+          <h2>Masz pytania?</h2>
+          <p>Skorzystaj z ponizszego formularza lub zadzwoń pod numer (+48) 795 886 779.
+          <form id="contact-form" action="http://www.hostedcontactform.com/api/v1/emails" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="form_token" value="3fdd547c90b878f37fc8e1fca847364f">
+            <input type="hidden" name="success_url" value="http://0.0.0.0:4567/thank_you.html">
+            <input type="hidden" name="failure_url" value="http://0.0.0.0:4567/thank_you.html">
+            <fieldset>
+              <label for="email_name"><span class="text-form">Imię</span>
+    <input type="text" name="email[name]" id="email_name"></label>
+    <label for="email_from"><span class="text-form">Email</span>
+    <input type="email" required name="email[from]" id="email_from"></label>
+    <label for="email_subject"><span class="text-form">Temat</span>
+    <input type="text" name="email[subject]" id="email_subject"></label>
+  <div class="wrapper">
+    <label for="email_body" class="text-form"><span class="text-form">Wiadomość</span></label>
+    <textarea name="email[body]" id="email_body" rows="5"></textarea>
   </div>
-</div>
+              <div class="buttons"> <button style="border:none; margin-right: 69px;" type="submit" class="button" href="#">Wyślij</button> </div>
+            </fieldset>
+          </form>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- footer -->
 <footer>
