@@ -1,7 +1,7 @@
-<% thumbnail = "/images/offer/oferta1_1min.jpg" %>
-<% image_paths = (1..5).to_a.map { |n| "/images/offer/oferta1_#{n}.jpg" } %>
+<% image_paths = (1...images_count).to_a.map { |n| "/images/offer/oferta#{index}_#{n}.jpg" } %>
 <script>
-$("#workshop_1").click( function(e) {
+$(function(){
+$("#workshop_<%=index%>").click( function(e) {
   e.stopPropagation();
   e.preventDefault();
   $.fancybox.open(
@@ -21,8 +21,9 @@ $("#workshop_1").click( function(e) {
     }
   );
 });
+});
 </script>
-<div class="wrapper border-bot margin-bot" id="workshop_1">
+<div class="wrapper border-bot margin-bot" class="workshop" id="workshop_<%= index %>">
   <article class="grid_12">
     <div class="media">
       <a class="pull-left" href="#" data-lightbox="image-art-sign" title="<%= title %>">
